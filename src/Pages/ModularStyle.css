@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+.MainContainer{
+    background-color: #1B1A17;
+}
+    
+
+.HeadContainer{
+    width: 95%;
+    height: 100vh;
+    margin:auto;
+    display: flex;
+    align-items: center;
+
+}
+    .HeadLeft{
+        flex: 30%;
+        margin-left: 10%;
+    }
+    
+    .HeadRight{
+        flex: 70%;
+        padding-left: 10%;
+    }
+
+    .HeadLeft img{
+        width: 100%;
+        border-radius: 5%;
+        transform-origin: 50% 50%;
+        transition: transform 1s, filter 1s ease-in-out;
+        filter: brightness(30%);
+        
+    }   
+
+    .HeadLeft:hover img{
+        filter: brightness(120%);
+        transform: scale(1.1);
+    }
+
+    .HeadRight h1{
+        color: #F0A500;
+        font-weight: 600;
+        font-family: Raleway;
+        
+    }
+
+    .HeadRight h3{
+        color: whitesmoke;
+        font-weight: 600;   
+        font-family: Raleway;
+    }
+
+    .desain{
+        font-weight:bolder; 
+        font-size: 32px;
+        font-family: Raleway;
+        background: -webkit-linear-gradient(#F0A500, #e7e7e2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent
+    }
+
+    .HeadRight p{
+        color: whitesmoke;
+        font-weight: lighter;
+        font-family: Raleway;   
+    }
+
+
+.BodyContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: #E6D5B8;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    /* box-shadow: 0 10px 0 10px black; */
+
+}
+    .BodyLeft{
+        flex:50%;
+    }
+
+
+    .BodyRight{
+        flex: 50%;
+    }
+
+    .BodyRight img{
+        width: 40%;
+    }
