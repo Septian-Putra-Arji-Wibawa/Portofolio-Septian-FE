@@ -1,28 +1,47 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Dummy from '../DummyData/Exp';
-import {API} from '../config/api';
-import {useQuery} from 'react-query';
+import axios from 'axios';
 
 
-export default function CardExp() {
-  let { data: pengalamans } = useQuery("pengalamansCache", async () => {
-    const response = await API.get("/pengalamans");
-    return response.data.data;
-  });
+class CardExp extends React.Component{
+constructor(){
+  super();
+  this.state = {
+    riwayats: []
+  }
+}
+  componentDidMount(){
+    // console.log('-----------ini akan dipasang')
+    const url =  'http://localhost:5000/api/v1/pengalamans'
 
-  return (
-    <row>
-    {pengalamans.map((item, index) => (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>{item.title}</Card.Title>
-        <Card.Text>{item.keterangan}</Card.Text>
-      </Card.Body>
-    </Card>
-    ))}
-    </row>
-  );
+    axios.get(url)
+    .then( riwayats => {
+      // console.log(riwayats.data)
+
+    this.setState({
+        riwayats: riwayats.data.riwayat
+      })
+    })
+  }
+
+  render(){
+    // console.log('-----------ini sedang dipasang')
+    return (
+      <>
+      { this.state.riwayats.map((riwayat,index) => {
+        return(
+            <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" key={index} src={riwayat.image} />
+              <Card.Body>
+                <Card.Title key={index}>{riwayat.title}</Card.Title>
+                <Card.Text key={index}>{riwayat.keterangan}</Card.Text>
+              </Card.Body>
+            </Card> 
+        )
+      })}
+      </>
+    )
+  }
 }
 
+export default CardExp;
