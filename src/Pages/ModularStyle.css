@@ -78,15 +78,22 @@
     /* box-shadow: 0 10px 0 10px black; */
 
 }
-    .BodyLeft{
-        flex:50%;
+    
+    .cardMain{
+        width: 15rem;
+        display: flex;
+        margin: auto;
     }
 
-
-    .BodyRight{
-        flex: 50%;
+    .cardImg{
+        padding:3%; 
+        border-radius:10px;
     }
 
-    .BodyRight img{
-        width: 40%;
+    .cardTitle{
+        color: white;
+    }
+
+    .cardText{
+        color:white;
     }

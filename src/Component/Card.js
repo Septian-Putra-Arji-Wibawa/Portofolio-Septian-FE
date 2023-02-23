@@ -30,11 +30,11 @@ constructor(){
       <>
       { this.state.riwayats.map((riwayat,index) => {
         return(
-            <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" key={index} src={riwayat.image} />
+            <Card className='cardMain' style={{backgroundColor:'#1B1A17', height:'80vh'}}>
+              <Card.Img variant="top" key={index} src={riwayat.image} className='cardImg' />
               <Card.Body>
-                <Card.Title key={index}>{riwayat.title}</Card.Title>
-                <Card.Text key={index}>{riwayat.keterangan}</Card.Text>
+                <Card.Title key={index} className='cardTitle'>{riwayat.judul}</Card.Title>
+                <Card.Text key={index} className='cardText'>{riwayat.keterangan}</Card.Text>
               </Card.Body>
             </Card> 
         )

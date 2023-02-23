@@ -20,23 +20,15 @@ function LandingPage() {
         </div>
       </div>
     
-      <h1>What Have i made?</h1>
+      
 
       <div className='BodyContainer' id='section2'>
-        <div className='BodyLeft'>
         <CardExp />
 
-        </div>
-
-        <div className='BodyRight'>
-        {/* <img src="img/UIPIC.png" alt="PNGPrOf" /> */}
-          
-        </div>
       </div>
-
+          
     </div>
   </div>
-    
   )
 }
 
