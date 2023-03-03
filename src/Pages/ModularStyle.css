@@ -2,6 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
+.NavigasiCss{
+    background-color:#1B1A17;
+    /* height: vh; */
+}
+
+    .NavigasiCss h4{
+        color: white;
+        margin: 1%;
+    }
+
+    
+
 .MainContainer{
     background-color: #1B1A17;
 }
@@ -9,7 +21,7 @@
 
 .HeadContainer{
     width: 95%;
-    height: 100vh;
+    height: 90vh;
     margin:auto;
     display: flex;
     align-items: center;
@@ -28,16 +40,16 @@
     .HeadLeft img{
         width: 100%;
         border-radius: 5%;
-        transform-origin: 50% 50%;
+        /* transform-origin: 50% 50%;
         transition: transform 1s, filter 1s ease-in-out;
-        filter: brightness(30%);
+        filter: brightness(30%); */
         
     }   
 
-    .HeadLeft:hover img{
+    /* .HeadLeft:hover img{
         filter: brightness(120%);
         transform: scale(1.1);
-    }
+    } */
 
     .HeadRight h1{
         color: #F0A500;
@@ -68,10 +80,26 @@
     }
 
 
-.BodyContainer{
+.BodyTitleContainer{
+    align-items: center;
+    display: flex;
+    margin: auto;
+    background-color: whitesmoke;
+    padding-top: 3%;
+}
+
+    .BodyTitleContainer p{
+        font-weight:bolder; 
+        font-size: 42px;
+        font-family: Raleway;
+        margin: auto;
+        background-color: whitesmoke;
+    }
+
+.BodyContainerProject{
     width: 100%;
     height: 100vh;
-    background-color: #E6D5B8;
+    background-color: whitesmoke;
     margin:auto;
     display: flex;
     align-items: center;
@@ -83,6 +111,9 @@
         width: 15rem;
         display: flex;
         margin: auto;
+        box-shadow: 10px 24px 31px -8px rgba(0,0,0,0.64);
+        -webkit-box-shadow: 10px 24px 31px -8px rgba(0,0,0,0.64);
+        -moz-box-shadow: 10px 24px 31px -8px rgba(0,0,0,0.64);
     }
 
     .cardImg{
@@ -97,3 +128,31 @@
     .cardText{
         color:white;
     }
+
+    
+
+.BodySkillContainer{
+    align-items: center;
+    display: flex;
+    margin: auto;
+    background-color: #1B1A17;
+    padding-top: 3%;
+}
+    
+    .BodySkillContainer p{
+        font-weight:bolder; 
+        font-size: 42px;
+        font-family: Raleway;
+        margin: auto;
+        /* background-color: #1B1A17; */
+        color: white;
+    }
+
+.BodyContainerSkill{
+    width: 100%;
+    height: 100vh;
+    background-color: #1B1A17;
+    margin:auto;
+    display: flex;
+    align-items: center;    
+}

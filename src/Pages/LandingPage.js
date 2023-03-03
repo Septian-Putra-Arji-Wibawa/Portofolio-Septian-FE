@@ -2,12 +2,16 @@ import React from 'react';
 import './ModularStyle.css';
 import Button from 'react-bootstrap/Button';
 import CardExp from '../Component/Card';
+import CardSkill from '../Component/CardSkill'
+import Navigasi from '../Component/Navigasi';
 
 function LandingPage() {
   return (
   <div>
+    <Navigasi />
     <div className='MainContainer' id='section1'>
       <div className='HeadContainer'>
+
         <div className='HeadLeft'>
           <img className="Profile" src="img/picProftrans.png" alt="profile" />
         </div>
@@ -20,11 +24,20 @@ function LandingPage() {
         </div>
       </div>
     
-      
+      <div className='BodyTitleContainer' >
+        <p>What do I do??</p>
+      </div>
 
-      <div className='BodyContainer' id='section2'>
+      <div className='BodyContainerProject' id='section2'>
         <CardExp />
+      </div>
 
+      <div className='BodySkillContainer' >
+        <p>I'm Experienced With</p>
+      </div>
+
+      <div className='BodyContainerSkill' id='section3'>
+        <CardSkill />
       </div>
           
     </div>

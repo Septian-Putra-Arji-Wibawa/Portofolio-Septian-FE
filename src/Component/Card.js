@@ -37,6 +37,7 @@ constructor(){
                 <Card.Text key={index} className='cardText'>{riwayat.keterangan}</Card.Text>
               </Card.Body>
             </Card> 
+           
         )
       })}
       </>

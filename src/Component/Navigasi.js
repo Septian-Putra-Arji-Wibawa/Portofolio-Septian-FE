@@ -1,19 +1,22 @@
-import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Button from 'react-bootstrap/esm/Button';
-import {Link, Route, Routes} from 'react-router-dom';
-
 
 function Navigasi() {
   return (
-    <div>
-
-      
-    </div>
-  )
+    <Navbar collapseOnSelect expand="lg" className='NavigasiCss'>
+      <Container>
+        <h4 href="#home">PORTOFOLIO</h4>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#section2" style={{color:'white'}}>Experience</Nav.Link>
+            <Nav.Link href="#section3" style={{color:'white'}}>Skill's</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
 export default Navigasi;
